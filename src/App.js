@@ -27,18 +27,24 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Weather and OpenAI Chat</h1>
-        <input
-          type="text"
-          value={cityName}
-          onChange={handleInputChange}
-          placeholder="Enter city name"
-        />
-        <button onClick={getWeather}>Get Weather and OpenAI Response</button>
-        <div>
-          <h2>Weather Report:</h2>
-          <pre>{weatherReport}</pre>
-          <h2>OpenAI Response:</h2>
-          <pre>{openaiResponse}</pre>
+        <div className="input-container">
+          <input
+            type="text"
+            value={cityName}
+            onChange={handleInputChange}
+            placeholder="Enter city name"
+          />
+          <button onClick={getWeather}>Get Weather and OpenAI Response</button>
+        </div>
+        <div className="response-container">
+          <div className="weather-report">
+            <h2>Weather Report:</h2>
+            <pre>{weatherReport}</pre>
+          </div>
+          <div className="openai-response">
+            <h2>OpenAI Response:</h2>
+            <pre>{openaiResponse}</pre>
+          </div>
         </div>
       </header>
     </div>
