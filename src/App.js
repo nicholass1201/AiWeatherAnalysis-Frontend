@@ -42,7 +42,7 @@ function App() {
             <pre>{weatherReport}</pre>
           </div>
           <div className="openai-response">
-            <h2>OpenAI Response:</h2>
+            <h2>AI Response:</h2>
             <pre>{openaiResponse}</pre>
           </div>
         </div>
